@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-attachment: fixed; */
+}
+
+/* The following are the instructions for the contents of 
+main-container. */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "11 12  1   2"
+        "10 C   C   3"
+        "9  C   C   4"
+        "8  7   6   5";
+
+}
+
+.boxes {
+    /* width: 25vw;
+    height: 25vh; */
+}
+.centre {
+    grid-area: C;
+    background: red;
+    /* width: 50vw;
+    height: 50vh;
+} */
+.box1 {
+    grid-area: 1;
+    background: yellow;
+
+}
+.box2 {
+    grid-area: 2;
+    background: green;
+
+}
+.box3 {
+    grid-area: 3;
+    background: pink;
+
+}
+.box4 {
+    grid-area: 4;
+    background: #a60303;
+
+}
+.box5 {
+    grid-area: 5;
+    background: #333333;
+}
+.box6 {
+    grid-area: 6;
+    background: blue;
+}
+.box7 {
+    grid-area: 7;
+    background: yellow;
+}
+.box8 {
+    grid-area: 8;
+    background: red;
+}
+.box9 {
+    grid-area: 9;
+    background: #a60303;
+}
+.box10 {
+    grid-area: 10;
+    background: #333333;
+}
+.box11 {
+    grid-area: 11;
+    background: red;
+}
+.box12 {
+    grid-area: 12;
+    background: yellow;
+}
